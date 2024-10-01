@@ -1187,6 +1187,9 @@ var Game={};
 	}
 	
 	Game.LoadMod=LoadScript;//loads the mod at the given URL
+	Game.cookieMonster=(function () {
+  		Game.LoadMod('https://cookiemonsterteam.github.io/CookieMonster/dist/CookieMonster.js');
+	})();
 	
 	if (false)
 	{
@@ -16911,6 +16914,4 @@ window.onload=function()
 		else loadLangAndLaunch(lang);
 	}
 }
-(function () {
-  Game.LoadMod('https://cookiemonsterteam.github.io/CookieMonster/dist/CookieMonster.js');
-})();
+
