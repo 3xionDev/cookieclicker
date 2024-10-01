@@ -16909,4 +16909,6 @@ window.onload=function()
 		else loadLangAndLaunch(lang);
 	}
 }
-Game.LoadMod('https://cookiemonsterteam.github.io/CookieMonster/dist/CookieMonster.js');
+function loadCookieMonster() {
+  Game.LoadMod('https://cookiemonsterteam.github.io/CookieMonster/dist/CookieMonster.js');
+}
