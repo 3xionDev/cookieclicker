@@ -16873,7 +16873,7 @@ window.onload=function()
 								'Hey, Orteil here. Cheated cookies taste awful... or do they?',
 							])+' ===]');
 							Game.Load(function(){Game.Init();if (firstLaunch) Game.showLangSelection(true);});
-							Game.LoadMod('https://cookiemonsterteam.github.io/CookieMonster/dist/CookieMonster.js');
+						
 
 							//try {Game.Load(Game.Init);}
 							//catch(err) {console.log('ERROR : '+err.message);}
@@ -16911,3 +16911,6 @@ window.onload=function()
 		else loadLangAndLaunch(lang);
 	}
 }
+(function () {
+  Game.LoadMod('https://cookiemonsterteam.github.io/CookieMonster/dist/CookieMonster.js');
+})();
